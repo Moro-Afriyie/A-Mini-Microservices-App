@@ -27,5 +27,5 @@ app.post("/posts", (req, res) => {
 });
 
 app.listen(5000, () => {
-  console.log("server listening on port 8080");
+  console.log("server listening on port 5000");
 });
