@@ -1,9 +1,10 @@
 import "./App.css";
+import PostCreate from "./components/PostCreate";
 
 function App() {
   return (
     <div className="container">
-      <h1>Post Works</h1>
+      <PostCreate />
     </div>
   );
 }
