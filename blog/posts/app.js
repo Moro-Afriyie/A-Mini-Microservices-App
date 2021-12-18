@@ -26,6 +26,6 @@ app.post("/posts", (req, res) => {
   res.status(201).send(posts[id]);
 });
 
-app.listen(8080, () => {
+app.listen(5000, () => {
   console.log("server listening on port 8080");
 });
