@@ -56,7 +56,7 @@ app.post("/events", async (req, res) => {
 
     comment.status = status;
 
-    await axios.post("http:localhost:7000/events", {
+    await axios.post("http://localhost:7000/events", {
       type: "CommentUpdated",
       data: {
         id,
@@ -70,6 +70,6 @@ app.post("/events", async (req, res) => {
   res.send({});
 });
 
-app.listen("4000", () => {
+app.listen(4000, () => {
   console.log("Server is Listening on Port 4000");
 });
