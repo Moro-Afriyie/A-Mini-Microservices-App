@@ -38,6 +38,12 @@ app.post("/posts/:id/comments", async (req, res) => {
   res.status(201).send(comments);
 });
 
+app.post("/events", (req, res) => {
+  console.log("Received Event: ", req.body.type);
+
+  res.send({});
+});
+
 app.listen("4000", () => {
   console.log("Server is Listening on Port 4000");
 });
