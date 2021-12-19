@@ -22,7 +22,9 @@ const posts = {};
 // }
 
 // route to send back the posts and comments of a particular post
-app.get("/posts", (req, res) => {});
+app.get("/posts", (req, res) => {
+  res.send(posts);
+});
 
 // route to listen to the event emitted by the event bus
 app.post("/events", (req, res) => {
