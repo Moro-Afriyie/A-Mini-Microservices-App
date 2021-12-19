@@ -24,6 +24,8 @@ app.post("/events", async (req, res) => {
       })
       .catch((err) => console.log(err));
   }
+
+  res.send({});
 });
 
 app.listen(4006, () => console.log("server listening on port 4006"));
