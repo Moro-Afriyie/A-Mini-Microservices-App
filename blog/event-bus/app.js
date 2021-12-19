@@ -17,22 +17,22 @@ app.post("/events", (req, res) => {
   // posts service
   axios
     .post("http://localhost:5000/events", event)
-    .catch((err) => console.log(err));
+    .catch((err) => console.log(err.message));
 
   // comments service
   axios
     .post("http://localhost:4000/events", event)
-    .catch((err) => console.log(err));
+    .catch((err) => console.log(err.message));
 
   //query service
   axios
     .post("http://localhost:4005/events", event)
-    .catch((err) => console.log(err));
+    .catch((err) => console.log(err.message));
 
   //moderation service
   axios
     .post("http://localhost:4006/events", event)
-    .catch((err) => console.log(err));
+    .catch((err) => console.log(err.message));
 
   res.send({ status: "OK" });
 });
